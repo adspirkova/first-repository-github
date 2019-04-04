@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+		<title>Welcome to Shanghai!</title>
+	</head>
+  
+  <body>
+  <h1>Welcome to Shanghai!</h1>
+    
+    <p>Positively electric, Shanghai is where China’s aspirations come to life. <a href="http://www.timeoutshanghai.com/Events.html" target="_blank" > Here's what is happening now! </a> A symbol of the country’s emerging status, a byword for opportunity and sophistication, the city is all that and more. Whether you’re after food, fashion or futuristic skylines, Shanghai’s buzzing confidence and nonstop action make for a veritable roller-coaster ride: hang on and have fun. However, if you are interested in further official information, please visit 
+      <a href="http://www.shanghai.gov.cn/shanghai/node27118/" target="_blank"> Shanghai.gov </a> . </p>
+    
+<p align=left>
+ <body onload="javascript:hideTable()">
+<input type='button' onClick='javascript:showTable();' value='show'>
+<input type='button' onClick='javascript:hideTable();' value='hide'>
+  <table id='table' border="1" cellpadding="10" cellspacing="0"> 
+
+       <tr>
+         <th> </th>
+         <th>Amazing places</th>
+ 
+        <th colspan="3">Delicious food</th>
+         <th> Entertainment </th>
+         </tr>  
+      <tr> 
+        <td rowspan="2">Discover these -> </td>
+        <td >See "Top 5 Sights" in find out more section</td>
+        <td> dumplings </td> <td>roasted duck </td>  <td> nudles</td>
+        <td>jumping dance floor</td>
+      </tr>
+      <tr>
+        <td >or look up #Shanghai on Instagram</td>
+        <td> sweets</td> <td>candy </td>  <td> chicken legs </td>
+        <td>Karaoke</td>
+      </tr>
+      
+    </table>
+     </p>
+     <img src="https://www.diplomatic-council.org/sites/default/files/2018-06/shanghai.jpg"/> 
+  
+  <br>
+    <button id="theButton"> Find Out More!</button>
+    
+    <div class="the-text"> <h2> Top 5 Sights </h2>
+      
+     <ol>
+       <li><b>The Bund</b> <p>Mainland China’s most iconic concession-era backdrop, the Bund encapsulates Shanghai with its postcard-perfect good looks. A dazzling curve of bombastic masonry, it leads the way as one of the city’s most stylish destinations.</p></li>
+       
+       <li><b>Shanghai Museum</b> <p>Shanghai’s best museum by a long shot, this must-see is a marvellous tribute to the path of beauty throughout the millennia, from ancient bronzes and transcendent landscapes to gorgeous ceramic masterpieces. </p></li>
+       
+       <li><b>Yuyuan Gardens & Bazaar</b> <p> For some, the Old Town’s beleaguered charms are one of the most alluring parts of a Shanghai visit. This classical garden is a fitting contrast to the city’s future-now mantra.</p></li>
+       
+       <li><b>M50</b> <p>Located in a former cotton mill, the industrially chic M50 is the city’s main creative hub. Dozens of edgy galleries and occasional events make this an absorbing place to wander. </p></li>
+       
+       <li> <b>Jade Buddha Temple</b> <p>Despite first impressions, the city does have a strong current of religious tradition. It’s best observed in this century-old Buddhist temple, which is witness to a continual stream of worshippers throughout the day.</p></li>
+       
+    </ol>
+     </body>
+    </div>
+
+  </html>
+
+  <script>
+
+    function showTable(){
+    document.getElementById('table').style.visibility = "visible";
+    }   
+    function hideTable(){
+    document.getElementById('table').style.visibility = "hidden";
+    }
+
+  
+
+    let theButton = document.getElementById('theButton');
+    let theText = document.querySelectorAll('.the-text');
+    theButton.onclick = function () { for(let x of theText) {
+    x.classList.toggle('colorized'); }
+    }
+
+
+  </script>
