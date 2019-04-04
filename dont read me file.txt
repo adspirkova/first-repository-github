@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+=======
+no nazdar!
+
+uz ti to jde?
+>>>>>>> d581dd3babe1c36272011f8ecc9eee03a24bc26a
